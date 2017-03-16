@@ -21,6 +21,6 @@ devise_for :users
         end
       end
 resources :cart_items
-
+resources :orders
 
 end
