@@ -25,7 +25,15 @@ devise_for :users
         end
       end
 
-        resources :orders do
+
+     resources :orders do
+     member do
+       post :cancel
+       post :ship
+       post :shipped
+       post :return
+         end
+       end
     member do
       post :pay_with_alipay
       post :pay_with_wechat
